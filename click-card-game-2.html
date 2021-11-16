@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=`">
+    <title>Document</title>
+    <style>
+        .section-board {
+            flex: 2;
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            gap: 20px;
+
+            transform: rotateX(60deg) rotateY(-10deg) rotateZ(50deg);
+
+            margin-top: 120px;
+
+            position: absolute;
+            top: 0;
+            left: 500px;
+        }
+        .board-item {
+            width: 100px;
+            height: 100px;
+            position: relative;
+
+            top: 0;
+            left: 0;
+
+            transition: all .3s;
+
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+        }
+        .board-item input {
+            display: none;
+        }
+        .board-item label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        .board-item input:checked + label {
+            background-color: sandybrown;
+        }
+
+        .board-item:hover {
+            cursor: pointer;
+            /* 트랜스폼과 제트인덱스는 같이 작동하지않는다 */
+            /* transform: translate(10px, -10px); */
+            top: -15px;
+            left: -15px;
+
+            box-shadow: 25px 25px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .board-item:nth-child(2n) {
+            background-color: lightskyblue;
+        }
+        .board-item:nth-child(2n-1) {
+            background-color: dodgerblue;
+        }
+        .board-item:nth-child(3n-1) {
+            background-color: mediumblue;
+        }
+        .board-item:nth-child(3n-2) {
+            background-color: midnightblue;
+        }
+    </style>    
+</head>
+<body>
+    <h1>Click the card!!</h1>
+    <div class="section-board">
+        <div class="board-item">
+            <input type="radio" class="" id="radio-1" name="radio">
+            <label for="radio-1">1</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-2" name="radio">
+            <label for="radio-2">2</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-3" name="radio">
+            <label for="radio-3">3</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-4" name="radio">
+            <label for="radio-4">4</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-5" name="radio">
+            <label for="radio-5">5</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-6" name="radio">
+            <label for="radio-6">6</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-7" name="radio">
+            <label for="radio-7">7</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-8" name="radio">
+            <label for="radio-8">8</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-9" name="radio">
+            <label for="radio-9">9</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-10" name="radio">
+            <label for="radio-10">10</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-11" name="radio">
+            <label for="radio-11">11</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-12" name="radio">
+            <label for="radio-12">12</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-13" name="radio">
+            <label for="radio-13">13</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-14" name="radio">
+            <label for="radio-14">14</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-15" name="radio">
+            <label for="radio-15">15</label>
+        </div>
+        <div class="board-item">
+            <input type="radio" class="" id="radio-16" name="radio">
+            <label for="radio-16">16</label>
+        </div>
+    </div>
+</body>
+</html>
