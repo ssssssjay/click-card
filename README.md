@@ -8,3 +8,4 @@ ___
 2. 그림자를 직접 주었습니다.
 ___
 https://ssssssjay.github.io/click-card/click-card-game-1
+https://ssssssjay.github.io/click-card/click-card-game-2
