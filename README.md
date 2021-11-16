@@ -6,3 +6,5 @@ ___
 
 1. 가상요소를 주어 그림자처럼 보이게 했습니다.
 2. 그림자를 직접 주었습니다.
+___
+https://ssssssjay.github.io/click-card/click-card-game-1
